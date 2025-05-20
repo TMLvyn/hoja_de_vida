@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin: 30px;
+        }
+        .profile-img {
+            width: 160px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            border: 3px solid #e0e0e0;
+        }
+        form {
+            background: #fafafa;
+            padding: 25px 30px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <main> 
+          <form>
+            <label for="Nombre">Nombre</label>
+            <input type="text" name="Nombre" required>
+            <br><br>
+
+            <label for="Profecion">Profecion</label>
+            <input type="text" name="Profecion" required>
+            <br><br>
+
+            <label for="Celular">Celular</label>
+            <input type="number" name="Clular" required>
+            <br><br>
+
+            <label for="Correo">Correo</label>
+            <input type="text" name="Correo" required>
+            <br><br>
+            
+            <label for="Sitio">Sitio</label>
+            <input type="text" name="Sitio" required>
+            <br><br>
+
+            <label for="Direccion">Direccion</label>
+            <input type="text" name="Direccion" required>
+          </form>
+        </main>
+        <img src="foto.jpg" alt="Foto perfil" class="profile-img">
+    </div>
+</body>
+</html>
