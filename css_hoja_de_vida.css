@@ -1,18 +1,95 @@
-   
-body{
+body {
     max-width: 800px;
     margin: 100px auto;
     padding: 20px;
-    background-color: antiquewhite;       
+    background-color: antiquewhite;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#contenedor{
+#contenedor {
     width: 100%;
     max-width: 600px;
     margin: auto;
     padding: 20px;
     background-color: rgb(255, 255, 255);
-    border-radius: 10px; ;
+    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
 
+nav a {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 32px;
+    color: #333;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+}
+
+h2 {
+    color: #4a4a4a;
+    border-left: 4px solid #999;
+    padding-left: 10px;
+    margin-top: 20px;
+}
+
+h3 {
+    color: #555;
+}
+
+p {
+    line-height: 1.6;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+.perfil {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    flex-direction: row-reverse; /* <-- Esto pone la imagen a la derecha */
+}
+
+.foto-perfil {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #999;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+.info-personal {
+    flex: 1;
+}
+
+@media (max-width: 600px) {
+    .perfil {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .foto-perfil {
+        margin-bottom: 10px;
+    }
 }
