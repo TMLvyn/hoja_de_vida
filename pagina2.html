@@ -1,95 +1,66 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Formulario Hoja de Vida</title>
-  <link rel="stylesheet" href="styles.css"></linkrel>
-  <style>
-    body {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
-      font-family: Arial, sans-serif;
-    }
-
-    label {
-      display: block;
-      margin-top: 15px;
-      font-weight: bold;
-    }
-
-    input[type="text"],
-    input[type="email"],
-    input[type="tel"],
-    input[type="number"],
-    textarea {
-      width: 100%;
-      padding: 8px;
-      margin-top: 5px;
-    }
-
-    button {
-      margin-top: 20px;
-      padding: 10px 15px;
-    }
-
-  </style>
-    
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <h1>Formulario - Hoja de Vida</h1>
-  <form action="#" method="post">
+  <div class="formulario-container">
+    <h1>Formulario - Hoja de Vida</h1>
+    <form action="#" method="post">
 
-    <label for="nombre">Nombre completo:</label>
-    <input type="text" id="nombre" name="nombre" required>
+      <label for="nombre">Nombre completo:</label>
+      <input type="text" id="nombre" name="nombre" required>
 
-    <label for="edad">Edad:</label>
-    <input type="number" id="edad" name="edad" required>
+      <label for="edad">Edad:</label>
+      <input type="number" id="edad" name="edad" required>
 
-    <label for="telefono">Teléfono:</label>
-    <input type="tel" id="telefono" name="telefono" required>
+      <label for="telefono">Teléfono:</label>
+      <input type="tel" id="telefono" name="telefono" required>
 
-    <label for="email">Correo electrónico:</label>
-    <input type="email" id="email" name="email" required>
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" required>
 
-    <label for="profesion">Profesión:</label>
-    <input type="text" id="profesion" name="profesion" placeholder="Ej: Desarrollador de software">
+      <label for="profesion">Profesión:</label>
+      <input type="text" id="profesion" name="profesion" placeholder="Ej: Desarrollador de software">
 
-    <label for="perfil">Perfil profesional:</label>
-    <textarea id="perfil" name="perfil" rows="4" placeholder="Describe tus cualidades y perfil profesional"></textarea>
+      <label for="perfil">Perfil profesional:</label>
+      <textarea id="perfil" name="perfil" rows="4" placeholder="Describe tus cualidades y perfil profesional"></textarea>
 
-    <hr>
+      <hr>
 
-    <h2>Experiencia</h2>
+      <h2>Experiencia</h2>
 
-    <label for="exp_software">Experiencia en desarrollo de software:</label>
-    <textarea id="exp_software" name="exp_software" rows="4"></textarea>
+      <label for="exp_software">Experiencia en desarrollo de software:</label>
+      <textarea id="exp_software" name="exp_software" rows="4"></textarea>
 
-    <label for="exp_bd">Experiencia en bases de datos:</label>
-    <textarea id="exp_bd" name="exp_bd" rows="4"></textarea>
+      <label for="exp_bd">Experiencia en bases de datos:</label>
+      <textarea id="exp_bd" name="exp_bd" rows="4"></textarea>
 
-    <hr>
+      <hr>
 
-    <h2>Educación</h2>
-    <label for="educacion">Describe tu formación académica:</label>
-    <textarea id="educacion" name="educacion" rows="4"></textarea>
+      <h2>Educación</h2>
+      <label for="educacion">Describe tu formación académica:</label>
+      <textarea id="educacion" name="educacion" rows="4"></textarea>
 
-    <hr>
+      <hr>
 
-    <h2>Habilidades</h2>
-    <label for="habilidades">Lista tus principales habilidades técnicas:</label>
-    <textarea id="habilidades" name="habilidades" rows="4" placeholder="Ej: Python, JavaScript, bases de datos, trabajo en equipo..."></textarea>
+      <h2>Habilidades</h2>
+      <label for="habilidades">Lista tus principales habilidades técnicas:</label>
+      <textarea id="habilidades" name="habilidades" rows="4" placeholder="Ej: Python, JavaScript, bases de datos, trabajo en equipo..."></textarea>
 
-    <hr>
+      <hr>
 
-    <h2>Intereses</h2>
-    <label for="intereses">Cuéntanos sobre tus intereses:</label>
-    <textarea id="intereses" name="intereses" rows="3"></textarea>
+      <h2>Intereses</h2>
+      <label for="intereses">Cuéntanos sobre tus intereses:</label>
+      <textarea id="intereses" name="intereses" rows="3"></textarea>
 
-    <button type="submit">Enviar Hoja de Vida</button>
-  </form>
+      <button type="submit">Enviar Hoja de Vida</button>
+    </form>
+  </div>
 
 </body>
 </html>

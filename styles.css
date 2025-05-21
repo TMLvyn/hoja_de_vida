@@ -1,31 +1,70 @@
- body {
-      max-width: 800px;
-      margin: auto;
-      margin: 10em;
-      padding: 20px;
-      font-family: Arial, sans-serif;
-      background-color: rgb(103, 214, 248)
-      
-    }
+body {
+  background-color: antiquewhite;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
 
-    label {
-      display: block;
-      margin-top: 15px;
-      font-weight: bold;
-        color: rgb(45, 21, 255); 
-    }
+.formulario-container {
+  max-width: 800px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
 
-    input[type="text"],
-    input[type="email"],
-    input[type="tel"],
-    input[type="number"],
-    textarea {
-      width: 100%;
-      padding: 8px;
-      margin-top: 5px;
-    }
+h1, h2 {
+  color: #333;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
+}
 
-    button {
-      margin-top: 20px;
-      padding: 10px 15px;
-    }
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  color: rgb(173, 122, 122);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  margin-top: 30px;
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+hr {
+  margin: 30px 0;
+  border: none;
+  border-top: 1px solid #ccc;
+}
